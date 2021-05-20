@@ -7,16 +7,16 @@ function SearchForm(props) {
         <form className="search">
           <div className="form-group">
             <input
-              // value={props.value}
-              // onChange={props.handleInputChange}
+              value={props.value}
+              onChange={props.handleInputChange}
               name="search"
               type="text"
               className="form-control"
               placeholder="Search for an employee"
             />
-            {/* <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
+            <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
               Search
-            </button> */}
+            </button>
           </div>
         </form>
       </nav>
