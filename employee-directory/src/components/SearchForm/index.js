@@ -12,15 +12,15 @@ function SearchForm(props) {
               name="search"
               type="text"
               className="form-control"
-              placeholder="Search for an employee"
+              placeholder="Search employees"
             />
-            <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
-              Search
-            </button>
           </div>
         </form>
+        <button type="submit" onClick={props.handleFormSubmit} className="btn btn-primary justify-content-center">
+          Search
+        </button>
       </nav>
     );
-}
+};
   
 export default SearchForm;
