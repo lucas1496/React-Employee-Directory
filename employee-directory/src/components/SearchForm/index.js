@@ -3,8 +3,8 @@ import "./style.css";
 
 function SearchForm(props) {
     return (
-      <nav>
-        <form className="search">
+      <nav className="navbar navbar-light bg-light justify-content-center"> 
+        <form className="form-inline m-2">
           <div className="form-group">
             <input
               value={props.value}
