@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default {
-    getRandomEmployess: function() {
-        return axios.get("https://randomuser.me/api/");
+    getRandomEmployees: function() {
+        return axios.get("https://randomuser.me/api/?results=30&nat=us");
     }
-}
+};
