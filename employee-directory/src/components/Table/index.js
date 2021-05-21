@@ -1,25 +1,31 @@
 import React from "react";
 
-function Table (props) {
+const Table = (props) => {
     return (
-      <table>
-        <caption>Our products</caption>
+      <table className="table table-sortable text-center">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>In Stock</th>
+            <th>Employee</th>
+            <th data-field="name" data-sortable="true">
+              <i className="fa fa-fw fa-sort" onClick={() => props.sortBy("name", "last", "first")}></i>
+              <span>Name</span>
+            </th>
+            <th>
+              <i className="fa fa-fw fa-sort" onClick={() => props.sortBy("email")}></i>
+              <span>Email</span>
+            </th>
+            <th>
+              <i className="fa fa-fw fa-sort" onClick={() => props.sortBy("phone")}></i>
+              <span>Phone</span>
+            </th>
+            <th>
+              <i className="fa fa-fw fa-sort" onClick={() => props.sortBy("dob", "date")}></i>
+              <span>Birthdate</span>
+            </th>
           </tr>
         </thead>
-        <tbody>
-          {products.map(product => (
-            <tr key={product.id}>
-              <td>{product.name}</td>
-              <td>{product.price}</td>
-              <td>{product.stock}</td>
-            </tr>
-          ))}
-        </tbody>
       </table>
     );
-}
+  };
+  
+  export default Table;
