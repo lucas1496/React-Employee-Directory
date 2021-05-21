@@ -4,7 +4,7 @@ import "./style.css";
 function SearchForm(props) {
     return (
       <nav className="navbar bg-dark justify-content-center"> 
-        <form className="form-inline m-2">
+        <form className="form-inline m-2" onSubmit={props.handleFormSubmit}>
           <div className="form-group">
             <input
               value={props.value}
@@ -16,9 +16,6 @@ function SearchForm(props) {
             />
           </div>
         </form>
-        <button type="submit" onClick={props.handleFormSubmit} className="btn btn-primary justify-content-center">
-          Search
-        </button>
       </nav>
     );
 };
