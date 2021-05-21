@@ -3,7 +3,7 @@ import "./style.css";
 
 function SearchForm(props) {
     return (
-      <nav className="navbar navbar-light bg-light justify-content-center"> 
+      <nav className="navbar bg-dark justify-content-center"> 
         <form className="form-inline m-2">
           <div className="form-group">
             <input
