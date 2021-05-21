@@ -2,7 +2,14 @@
     
 ## Description
     
-- This is a React-based app that simulates an employee directory using the [Random User API](https://randomuser.me/). The user can sort the table by employee name and filter the users by clicking on the table headers
+- This is a React-based app that simulates an employee directory using the [Random User API](https://randomuser.me/). The user can filter the table by employee name and sort the users by clicking on the arrows at the top of the table
+
+![Screen Shot 2021-05-20 at 9 50 40 PM](https://user-images.githubusercontent.com/60542798/119074958-97af4f80-b9b5-11eb-9957-38c291dea7a6.png)
+
+
+## Link to deployed app on Heroku
+
+- https://employee-directory-lq.herokuapp.com/
 
 ## Table of Contents
 - <a href="#inst">Installation<a>
